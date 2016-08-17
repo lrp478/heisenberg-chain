@@ -15,6 +15,7 @@ main()
   double *H, *W, *work;
   unsigned int search ( unsigned int *, int, unsigned int );
   int btest(unsigned int, int);
+  int dsyev_(char*, char*, int*, double*, int*, double*, double*, int*, int*);
   fprintf (stdout,"Number of sites:");
   scanf ("%d", &N) ;
   if ( N <= 0 ) { fprintf (stderr,"wrong N\n"); exit(1); }
